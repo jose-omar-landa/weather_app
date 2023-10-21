@@ -16,7 +16,7 @@ def f_temp(k_temp):
 # Function to pull weather data using OpenWeather API:
 def pull_weather_info(canvas):
     city = textfield.get()
-    api = "http://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=9db00a166be88aa415f63706801886a9"
+    api = "ENTER OPEN WEATHER API HERE + city + "&appid=ENTER ID HERE FROM API"
     json_data = requests.get(api).json()
     condition = json_data["weather"][0]["main"]
     temp = f_temp(int(json_data["main"]["temp"]))
